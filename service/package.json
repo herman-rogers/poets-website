@@ -1,0 +1,7 @@
+{
+  "name": "poets-website-service",
+  "version": "1.0.0",
+  "description": "Serverless REST api endpoints",
+  "author": "Boomer Rogers <herman.rogers@gmail.com> (www.boomerrogers.com)",
+  "license": "MIT"
+}
