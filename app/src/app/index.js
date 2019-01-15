@@ -1,24 +1,16 @@
-import './app.css';
+import React from 'react';
+import { hot } from 'react-hot-loader';
+import { Route, Switch } from 'react-router';
+import HomePage from '../home/HomePage';
+import BlogPage from '../blog/BlogPage';
 
-import React, { Component } from 'react';
-
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <div className="App-heading App-flex">
-          <h2>
-            Welcome to <span className="App-react">React</span>
-          </h2>
-        </div>
-        <div className="App-instructions App-flex">
-          <p>
-            Edit <code>src/App.js</code> and save to hot reload your changes.
-          </p>
-        </div>
-      </div>
-    );
-  }
+function App() {
+  return (
+    <Switch>
+      <Route exact path="/" component={HomePage} />
+      <Route exact path="/blog" component={BlogPage} />
+    </Switch>
+  );
 }
 
-export default App;
+export default hot(module)(App);
